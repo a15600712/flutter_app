@@ -1,8 +1,8 @@
-# Install script for directory: /home/anon/Flutter_App/flutter_application_1/linux
+# Install script for directory: /home/anon/flutter_app/linux
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/anon/Flutter_App/flutter_application_1/build/linux/x64/debug/bundle")
+  set(CMAKE_INSTALL_PREFIX "/home/anon/flutter_app/build/linux/x64/debug/bundle")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,95 +39,95 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimex" OR NOT CMAKE_INSTALL_COMPONENT)
   
-  file(REMOVE_RECURSE "/home/anon/Flutter_App/flutter_application_1/build/linux/x64/debug/bundle/")
+  file(REMOVE_RECURSE "/home/anon/flutter_app/build/linux/x64/debug/bundle/")
   
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimex" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/home/anon/Flutter_App/flutter_application_1/build/linux/x64/debug/bundle/flutter_application_1" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/anon/Flutter_App/flutter_application_1/build/linux/x64/debug/bundle/flutter_application_1")
+  if(EXISTS "$ENV{DESTDIR}/home/anon/flutter_app/build/linux/x64/debug/bundle/flutter_app" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/anon/flutter_app/build/linux/x64/debug/bundle/flutter_app")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/home/anon/Flutter_App/flutter_application_1/build/linux/x64/debug/bundle/flutter_application_1"
+         FILE "$ENV{DESTDIR}/home/anon/flutter_app/build/linux/x64/debug/bundle/flutter_app"
          RPATH "$ORIGIN/lib")
   endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/anon/Flutter_App/flutter_application_1/build/linux/x64/debug/bundle/flutter_application_1")
+   "/home/anon/flutter_app/build/linux/x64/debug/bundle/flutter_app")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/anon/Flutter_App/flutter_application_1/build/linux/x64/debug/bundle" TYPE EXECUTABLE FILES "/home/anon/Flutter_App/flutter_application_1/build/linux/x64/debug/intermediates_do_not_run/flutter_application_1")
-  if(EXISTS "$ENV{DESTDIR}/home/anon/Flutter_App/flutter_application_1/build/linux/x64/debug/bundle/flutter_application_1" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/anon/Flutter_App/flutter_application_1/build/linux/x64/debug/bundle/flutter_application_1")
+file(INSTALL DESTINATION "/home/anon/flutter_app/build/linux/x64/debug/bundle" TYPE EXECUTABLE FILES "/home/anon/flutter_app/build/linux/x64/debug/intermediates_do_not_run/flutter_app")
+  if(EXISTS "$ENV{DESTDIR}/home/anon/flutter_app/build/linux/x64/debug/bundle/flutter_app" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/anon/flutter_app/build/linux/x64/debug/bundle/flutter_app")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}/home/anon/Flutter_App/flutter_application_1/build/linux/x64/debug/bundle/flutter_application_1"
-         OLD_RPATH "/home/anon/Flutter_App/flutter_application_1/linux/flutter/ephemeral:"
+         FILE "$ENV{DESTDIR}/home/anon/flutter_app/build/linux/x64/debug/bundle/flutter_app"
+         OLD_RPATH "/home/anon/flutter_app/linux/flutter/ephemeral:"
          NEW_RPATH "$ORIGIN/lib")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/snap/flutter/current/usr/bin/strip" "$ENV{DESTDIR}/home/anon/Flutter_App/flutter_application_1/build/linux/x64/debug/bundle/flutter_application_1")
+      execute_process(COMMAND "/snap/flutter/current/usr/bin/strip" "$ENV{DESTDIR}/home/anon/flutter_app/build/linux/x64/debug/bundle/flutter_app")
     endif()
   endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimex" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/anon/Flutter_App/flutter_application_1/build/linux/x64/debug/bundle/data/icudtl.dat")
+   "/home/anon/flutter_app/build/linux/x64/debug/bundle/data/icudtl.dat")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/anon/Flutter_App/flutter_application_1/build/linux/x64/debug/bundle/data" TYPE FILE FILES "/home/anon/Flutter_App/flutter_application_1/linux/flutter/ephemeral/icudtl.dat")
+file(INSTALL DESTINATION "/home/anon/flutter_app/build/linux/x64/debug/bundle/data" TYPE FILE FILES "/home/anon/flutter_app/linux/flutter/ephemeral/icudtl.dat")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimex" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/anon/Flutter_App/flutter_application_1/build/linux/x64/debug/bundle/lib/libflutter_linux_gtk.so")
+   "/home/anon/flutter_app/build/linux/x64/debug/bundle/lib/libflutter_linux_gtk.so")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/anon/Flutter_App/flutter_application_1/build/linux/x64/debug/bundle/lib" TYPE FILE FILES "/home/anon/Flutter_App/flutter_application_1/linux/flutter/ephemeral/libflutter_linux_gtk.so")
+file(INSTALL DESTINATION "/home/anon/flutter_app/build/linux/x64/debug/bundle/lib" TYPE FILE FILES "/home/anon/flutter_app/linux/flutter/ephemeral/libflutter_linux_gtk.so")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimex" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/anon/Flutter_App/flutter_application_1/build/linux/x64/debug/bundle/lib/")
+   "/home/anon/flutter_app/build/linux/x64/debug/bundle/lib/")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/anon/Flutter_App/flutter_application_1/build/linux/x64/debug/bundle/lib" TYPE DIRECTORY FILES "/home/anon/Flutter_App/flutter_application_1/build/native_assets/linux/")
+file(INSTALL DESTINATION "/home/anon/flutter_app/build/linux/x64/debug/bundle/lib" TYPE DIRECTORY FILES "/home/anon/flutter_app/build/native_assets/linux/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimex" OR NOT CMAKE_INSTALL_COMPONENT)
   
-  file(REMOVE_RECURSE "/home/anon/Flutter_App/flutter_application_1/build/linux/x64/debug/bundle/data/flutter_assets")
+  file(REMOVE_RECURSE "/home/anon/flutter_app/build/linux/x64/debug/bundle/data/flutter_assets")
   
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimex" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/anon/Flutter_App/flutter_application_1/build/linux/x64/debug/bundle/data/flutter_assets")
+   "/home/anon/flutter_app/build/linux/x64/debug/bundle/data/flutter_assets")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/anon/Flutter_App/flutter_application_1/build/linux/x64/debug/bundle/data" TYPE DIRECTORY FILES "/home/anon/Flutter_App/flutter_application_1/build//flutter_assets")
+file(INSTALL DESTINATION "/home/anon/flutter_app/build/linux/x64/debug/bundle/data" TYPE DIRECTORY FILES "/home/anon/flutter_app/build//flutter_assets")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/anon/Flutter_App/flutter_application_1/build/linux/x64/debug/flutter/cmake_install.cmake")
+  include("/home/anon/flutter_app/build/linux/x64/debug/flutter/cmake_install.cmake")
 
 endif()
 
@@ -139,5 +139,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/anon/Flutter_App/flutter_application_1/build/linux/x64/debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/anon/flutter_app/build/linux/x64/debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

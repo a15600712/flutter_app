@@ -1,9 +1,9 @@
-import 'package:english_words/english_words.dart';
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -11,143 +11,89 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
-      create: (context) => MyAppState(),
-      child: MaterialApp(
-        title: 'Namer App',
-        theme: ThemeData(
-          useMaterial3: true,
-          colorScheme:
-              ColorScheme.fromSeed(seedColor: Color.fromARGB(252, 255, 1, 1)),
-        ),
-        home: MyHomePage(),
-      ),
-    );
-  }
-}
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        backgroundColor: Colors.blue[200],
+        // body: Center(
+        //   child: Container(
+        //     height: 300,
+        //     width: 300,
+        //     decoration: BoxDecoration(
+        //         color: Colors.green, borderRadius: BorderRadius.circular(50)),
+        //     padding: EdgeInsets.all(25),
+        //     child: Center(
+        //       child: Text(
+        //         "I dont knw",
+        //         style: TextStyle(
+        //           fontSize: 26,
+        //           fontStyle: FontStyle.italic,
+        //           fontWeight: FontWeight.bold,
+        //         ),
+        //       ),
+        //     ),
 
-class MyAppState extends ChangeNotifier {
-  var current = WordPair.random();
-  void getNext() {
-    current = WordPair.random();
-    notifyListeners();
-  }
-
-  var favorites = <WordPair>[];
-
-  void toggleFavorite() {
-    if (favorites.contains(current)) {
-      favorites.remove(current);
-    } else {
-      favorites.add(current);
-    }
-    notifyListeners();
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Row(
-        children: [
-          SafeArea(
-            child: NavigationRail(
-              extended: false,
-              destinations: [
-                NavigationRailDestination(
-                  icon: Icon(Icons.home),
-                  label: Text('Home'),
-                ),
-                NavigationRailDestination(
-                  icon: Icon(Icons.favorite),
-                  label: Text('Favorites'),
-                ),
-              ],
-              selectedIndex: 0,
-              onDestinationSelected: (value) {
-                print('selected: $value');
-              },
-            ),
-          ),
-          Expanded(
-            child: Container(
-              color: Theme.of(context).colorScheme.primaryContainer,
-              child: GeneratorPage(),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class GeneratorPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    var appState = context.watch<MyAppState>();
-    var pair = appState.current;
-
-    IconData icon;
-    if (appState.favorites.contains(pair)) {
-      icon = Icons.favorite;
-    } else {
-      icon = Icons.favorite_border;
-    }
-
-    return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          BigCard(pair: pair),
-          SizedBox(height: 10),
-          Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              ElevatedButton.icon(
-                onPressed: () {
-                  appState.toggleFavorite();
-                },
-                icon: Icon(icon),
-                label: Text('Like'),
+        //   ),
+        // ),
+        // body: Center(
+        //   child: Container(
+        //     height: 250,
+        //     width: 250,
+        //     decoration: BoxDecoration(
+        //         color: Colors.black, borderRadius: BorderRadius.circular(10)),
+        //     child: Icon(
+        //       Icons.favorite,
+        //       size: 150,
+        //       color: Colors.purple,
+        //     ),
+        //   ),
+        // ),
+        // appBar: AppBar(
+        //   title: Text("Testing"),
+        //   centerTitle: true,
+        //   elevation: 10,
+        //   backgroundColor: Colors.indigo,
+        //   shadowColor: Colors.black,
+        //   leading: Icon(Icons.menu),
+        //   actions: [
+        //     IconButton(
+        //       onPressed: () {},
+        //       icon: Icon(Icons.logout),
+        //     ),
+        //   ],
+        // ),
+        body: Column(
+          // mainAxisAlignment: MainAxisAlignment.spaceAround,
+          // crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            //container1
+            Container(
+              width: 200,
+              height: 200,
+              decoration: BoxDecoration(
+                color: Colors.lightBlue,
               ),
-              SizedBox(width: 10),
-              ElevatedButton(
-                onPressed: () {
-                  appState.getNext();
-                },
-                child: Text('Next'),
+              child: Icon(Icons.star_border),
+            ),
+            //container2
+            Container(
+              width: 200,
+              height: 200,
+              decoration: BoxDecoration(
+                color: Colors.blue[500],
               ),
-            ],
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class BigCard extends StatelessWidget {
-  const BigCard({
-    super.key,
-    required this.pair,
-  });
-
-  final WordPair pair;
-
-  @override
-  Widget build(BuildContext context) {
-    var theme = Theme.of(context);
-    final style = theme.textTheme.displayMedium!.copyWith(
-      color: theme.colorScheme.onPrimary,
-    );
-    return Card(
-      color: theme.colorScheme.primary,
-      child: Padding(
-        padding: const EdgeInsets.all(20),
-        child: Text(
-          pair.asLowerCase,
-          style: style,
-          semanticsLabel: pair.asPascalCase,
+              child: Icon(Icons.favorite),
+            ),
+            //container3
+            Container(
+              width: 200,
+              height: 200,
+              decoration: BoxDecoration(
+                color: Colors.blue[900],
+              ),
+              child: Icon(Icons.favorite),
+            ),
+          ],
         ),
       ),
     );
