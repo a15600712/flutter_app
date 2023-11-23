@@ -32,10 +32,10 @@
       "languageVersion": "2.18"
     },
     {
-      "name": "english_words",
-      "rootUri": "file:///home/anon/.pub-cache/hosted/pub.dev/english_words-4.0.0",
+      "name": "cupertino_icons",
+      "rootUri": "file:///home/anon/.pub-cache/hosted/pub.dev/cupertino_icons-1.0.6",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.19"
     },
     {
       "name": "fake_async",
@@ -45,7 +45,7 @@
     },
     {
       "name": "flutter",
-      "rootUri": "file:///home/anon/flutter/packages/flutter",
+      "rootUri": "file:///home/anon/snap/flutter/common/flutter/packages/flutter",
       "packageUri": "lib/",
       "languageVersion": "3.2"
     },
@@ -57,7 +57,7 @@
     },
     {
       "name": "flutter_test",
-      "rootUri": "file:///home/anon/flutter/packages/flutter_test",
+      "rootUri": "file:///home/anon/snap/flutter/common/flutter/packages/flutter_test",
       "packageUri": "lib/",
       "languageVersion": "3.2"
     },
@@ -86,26 +86,14 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "nested",
-      "rootUri": "file:///home/anon/.pub-cache/hosted/pub.dev/nested-1.0.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "path",
       "rootUri": "file:///home/anon/.pub-cache/hosted/pub.dev/path-1.8.3",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
-      "name": "provider",
-      "rootUri": "file:///home/anon/.pub-cache/hosted/pub.dev/provider-6.1.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "sky_engine",
-      "rootUri": "file:///home/anon/flutter/bin/cache/pkg/sky_engine",
+      "rootUri": "file:///home/anon/snap/flutter/common/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
       "languageVersion": "3.2"
     },
@@ -158,13 +146,13 @@
       "languageVersion": "3.2"
     },
     {
-      "name": "namer_app",
+      "name": "flutter_app",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "3.1"
+      "languageVersion": "3.2"
     }
   ],
-  "generated": "2023-11-23T02:35:50.696926Z",
+  "generated": "2023-11-23T16:32:04.810818Z",
   "generator": "pub",
   "generatorVersion": "3.2.0"
 }
