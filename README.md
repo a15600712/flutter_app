@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # flutter_app
 
 A new Flutter project.
@@ -13,7 +12,6 @@ then
 ```
 flutter run
 ```
->>>>>>> fe89bcc2de7765dd5cf50259ef37e09b97e9f064
 ## Getting Started
 
 This project is a starting point for a Flutter application.
