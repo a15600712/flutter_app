@@ -2,7 +2,6 @@
 
 A new Flutter project.
 
-# flutter_application_1
 ## Run This!! If u using different pc
 ```
 flutter clean
