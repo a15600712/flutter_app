@@ -1,4 +1,5 @@
 # ninja log v5
+<<<<<<< HEAD
 0	32700	0	/home/anon/flutter_app/linux/flutter/ephemeral/libflutter_linux_gtk.so	36109a0b4b13f8fe
 0	32700	0	/home/anon/flutter_app/linux/flutter/ephemeral/flutter_linux/fl_basic_message_channel.h	36109a0b4b13f8fe
 0	32700	0	/home/anon/flutter_app/linux/flutter/ephemeral/flutter_linux/fl_binary_codec.h	36109a0b4b13f8fe
@@ -26,3 +27,60 @@
 32712	35105	1700752837295836370	CMakeFiles/flutter_app.dir/flutter/generated_plugin_registrant.cc.o	7631945d9bcfe65c
 35105	35906	1700752838111828769	intermediates_do_not_run/flutter_app	6758e40543a7f9ba
 35906	36237	0	CMakeFiles/install.util	704d4748cae56cbf
+=======
+1	12221	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/flutter_linux/fl_method_response.h	8585954557b5702d
+1	12221	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/flutter_linux/fl_binary_codec.h	8585954557b5702d
+1	12221	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/flutter_linux/fl_method_channel.h	8585954557b5702d
+1	12221	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/flutter_linux/fl_method_codec.h	8585954557b5702d
+1	12221	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/flutter_linux/fl_basic_message_channel.h	8585954557b5702d
+1	12221	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/flutter_linux/fl_message_codec.h	8585954557b5702d
+1	12221	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/flutter_linux/fl_json_message_codec.h	8585954557b5702d
+1	12221	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/flutter_linux/fl_json_method_codec.h	8585954557b5702d
+1	12221	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/flutter_linux/fl_method_call.h	8585954557b5702d
+12222	12786	1700706964829523039	CMakeFiles/flutter_application_1.dir/main.cc.o	62e0933a2bdd18e1
+1	12221	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/flutter_linux/fl_dart_project.h	8585954557b5702d
+1	12221	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/flutter_linux/fl_binary_messenger.h	8585954557b5702d
+1	12221	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/flutter_linux/fl_string_codec.h	8585954557b5702d
+1	12221	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/flutter_linux/fl_engine.h	8585954557b5702d
+13025	13153	0	CMakeFiles/install.util	585eb3c3626366dc
+12858	13025	1700706965069544378	intermediates_do_not_run/flutter_application_1	a00d71487b2865cb
+1	12221	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/flutter_linux/flutter_linux.h	8585954557b5702d
+1	12221	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/flutter_linux/fl_value.h	8585954557b5702d
+12222	12858	1700706964899529263	CMakeFiles/flutter_application_1.dir/my_application.cc.o	1c88d7038303a40d
+1	12221	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/flutter_linux/fl_standard_message_codec.h	8585954557b5702d
+1	12221	0	/home/anon/Desktop/Flutter_App/build/linux/x64/debug/flutter/_phony_	8585954557b5702d
+1	12221	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/flutter_linux/fl_view.h	8585954557b5702d
+1	12221	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/flutter_linux/fl_standard_method_codec.h	8585954557b5702d
+1	12221	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/flutter_linux/fl_plugin_registrar.h	8585954557b5702d
+1	12221	0	flutter/_phony_	8585954557b5702d
+1	12221	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/flutter_linux/fl_plugin_registry.h	8585954557b5702d
+1	12221	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/libflutter_linux_gtk.so	8585954557b5702d
+12222	12789	1700706964832856668	CMakeFiles/flutter_application_1.dir/flutter/generated_plugin_registrant.cc.o	93d341a862b6fe38
+3	2366	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/libflutter_linux_gtk.so	8585954557b5702d
+3	2366	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/flutter_linux/fl_basic_message_channel.h	8585954557b5702d
+3	2366	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/flutter_linux/fl_binary_codec.h	8585954557b5702d
+3	2366	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/flutter_linux/fl_binary_messenger.h	8585954557b5702d
+3	2366	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/flutter_linux/fl_dart_project.h	8585954557b5702d
+3	2366	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/flutter_linux/fl_engine.h	8585954557b5702d
+3	2366	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/flutter_linux/fl_json_message_codec.h	8585954557b5702d
+3	2366	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/flutter_linux/fl_json_method_codec.h	8585954557b5702d
+3	2366	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/flutter_linux/fl_message_codec.h	8585954557b5702d
+3	2366	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/flutter_linux/fl_method_call.h	8585954557b5702d
+3	2366	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/flutter_linux/fl_method_channel.h	8585954557b5702d
+3	2366	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/flutter_linux/fl_method_codec.h	8585954557b5702d
+3	2366	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/flutter_linux/fl_method_response.h	8585954557b5702d
+3	2366	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/flutter_linux/fl_plugin_registrar.h	8585954557b5702d
+3	2366	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/flutter_linux/fl_plugin_registry.h	8585954557b5702d
+3	2366	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/flutter_linux/fl_standard_message_codec.h	8585954557b5702d
+3	2366	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/flutter_linux/fl_standard_method_codec.h	8585954557b5702d
+3	2366	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/flutter_linux/fl_string_codec.h	8585954557b5702d
+3	2366	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/flutter_linux/fl_value.h	8585954557b5702d
+3	2366	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/flutter_linux/fl_view.h	8585954557b5702d
+3	2366	0	/home/anon/Desktop/Flutter_App/linux/flutter/ephemeral/flutter_linux/flutter_linux.h	8585954557b5702d
+3	2366	0	flutter/_phony_	8585954557b5702d
+3	2366	0	/home/anon/Desktop/Flutter_App/build/linux/x64/debug/flutter/_phony_	8585954557b5702d
+2367	2847	1700707061031452406	CMakeFiles/flutter_application_1.dir/flutter/generated_plugin_registrant.cc.o	93d341a862b6fe38
+2367	2926	1700707061111459587	CMakeFiles/flutter_application_1.dir/my_application.cc.o	1c88d7038303a40d
+2926	3103	1700707061288142112	intermediates_do_not_run/flutter_application_1	57ed941b3f48edc0
+3103	3230	0	CMakeFiles/install.util	585eb3c3626366dc
+>>>>>>> fe89bcc2de7765dd5cf50259ef37e09b97e9f064
