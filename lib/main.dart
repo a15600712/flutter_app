@@ -9,6 +9,10 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
+  void tapped() {
+    print("Tapped");
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -142,17 +146,67 @@ class MyApp extends StatelessWidget {
         //     ),
         //   ],
         // ),
-        body: ListView.builder(
-          itemCount: 10,
-          reverse: true,
-          itemBuilder: (context, index) => ListTile(
-            title: Text(
-              
-              index.toString(),
-              style: TextStyle(color: Colors.black,fontSize: 40),
+        // body: ListView.builder(
+        //   itemCount: 10,
+        //   reverse: true,
+        //   itemBuilder: (context, index) => ListTile(
+        //     title: Text(
+        //       index.toString(),
+        //       style: TextStyle(color: Colors.black,fontSize: 40),
+        //     ),
+        //     contentPadding: EdgeInsets.all(20),
+        //     tileColor: Colors.deepPurple[900 - index * 100],
+        //   ),
+        // ),
+        // body: GridView.builder(
+        //   itemCount: 64,
+        //   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 8),
+        //   itemBuilder: (context,index)=>Container(
+        //     color: Colors.pink,
+        //     margin: EdgeInsets.all(1),
+        //   ),
+        // ),
+        // body: Center(
+        //   child: Stack(
+        //     alignment: Alignment.center,
+        //     children: [
+        //       Container(
+        //         height: 400,
+        //         width: 400,
+        //         color: Colors.pink[600],
+        //       ),
+        //       Container(
+        //         height: 300,
+        //         width: 300,
+        //         color: Colors.pink[400],
+        //       ),
+        //       Container(
+        //         height: 200,
+        //         width: 200,
+        //         color: Colors.pink[200],
+        //       ),
+        //       Container(
+        //         height: 100,
+        //         width: 100,
+        //         color: Colors.pink[50],
+        //       ),
+        //     ],
+        //   ),
+        // ),
+        body: Center(
+          child: GestureDetector(
+            onTap: tapped,
+            child: Container(
+              width: 300,
+              height: 300,
+              color: Colors.amber[100],
+              child: Center(
+                child: Text(
+                  "Tap me",
+                  style: TextStyle(fontSize: 32),
+                ),
+              ),
             ),
-            contentPadding: EdgeInsets.all(20),
-            tileColor: Colors.deepPurple[900 - index * 100],
           ),
         ),
       ),
