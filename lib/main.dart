@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.blue[200],
+        // backgroundColor: Colors.blue[200],
         // body: Center(
         //   child: Container(
         //     height: 300,
@@ -62,38 +62,98 @@ class MyApp extends StatelessWidget {
         //     ),
         //   ],
         // ),
-        body: Column(
-          // mainAxisAlignment: MainAxisAlignment.spaceAround,
-          // crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            //container1
-            Container(
-              width: 200,
-              height: 200,
-              decoration: BoxDecoration(
-                color: Colors.lightBlue,
-              ),
-              child: Icon(Icons.star_border),
+        // body: Column(
+        // mainAxisAlignment: MainAxisAlignment.spaceAround,
+        // crossAxisAlignment: CrossAxisAlignment.center,
+
+        // children: [
+        //   //container1
+        //   Expanded(
+        //     child: Container(
+        //       color: Colors.blue[100],
+        //       child: Icon(
+        //         Icons.bolt,
+        //         size: 50,
+        //       ),
+        //     ),
+        //   ),
+        //   //container2
+        //   Expanded(
+        //     // flex: 2,
+        //     child: Container(
+        //       color: Colors.blue[300],
+        //       padding: EdgeInsets.all(50),
+        //       child: Icon(
+        //         Icons.favorite,
+        //         size: 50,
+        //       ),
+        //     ),
+        //   ),
+        //   //container3
+        //   Expanded(
+        //     child: Container(
+        //       color: Colors.blue[500],
+        //       padding: EdgeInsets.all(60),
+        //       child: Icon(
+        //         Icons.star,
+        //         color: Colors.white,
+        //         size: 50,
+        //       ),
+        //     ),
+        //   ),
+        // ],
+        // ),
+        //ListView can scroll the screen suitable for widget that overflow the screen pixel
+        // body: ListView(
+        //   scrollDirection: Axis.horizontal,
+        //   children: [
+        //     Container(
+        //       height: 700,
+        //       width: 650,
+        //       color: Colors.deepPurple,
+        //       child: Icon(
+        //         Icons.star_border_outlined,
+        //         size: 150,
+        //         // weight:100,
+        //         color: Colors.white,
+        //       ),
+        //     ),
+        //     Container(
+        //       height: 350,
+        //       width: 650,
+        //       color: Colors.deepPurple[400],
+
+        //       child: Icon(
+        //         Icons.favorite_border_outlined,
+        //         size: 150,
+        //         color: Colors.white,
+
+        //       ),
+        //     ),
+        //     Container(
+        //       height: 350,
+        //       width: 650,
+        //       color: Colors.deepPurple[200],
+        //       child: Icon(
+        //         Icons.circle_outlined,
+        //         size: 150,
+        //         color: Colors.white,
+        //       ),
+        //     ),
+        //   ],
+        // ),
+        body: ListView.builder(
+          itemCount: 10,
+          reverse: true,
+          itemBuilder: (context, index) => ListTile(
+            title: Text(
+              
+              index.toString(),
+              style: TextStyle(color: Colors.black,fontSize: 40),
             ),
-            //container2
-            Container(
-              width: 200,
-              height: 200,
-              decoration: BoxDecoration(
-                color: Colors.blue[500],
-              ),
-              child: Icon(Icons.favorite),
-            ),
-            //container3
-            Container(
-              width: 200,
-              height: 200,
-              decoration: BoxDecoration(
-                color: Colors.blue[900],
-              ),
-              child: Icon(Icons.favorite),
-            ),
-          ],
+            contentPadding: EdgeInsets.all(20),
+            tileColor: Colors.deepPurple[900 - index * 100],
+          ),
         ),
       ),
     );
